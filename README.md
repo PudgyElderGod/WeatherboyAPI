@@ -1,6 +1,9 @@
 # Homework for BEW1.1
 Gotta find out how to do the API good.
 
+## Update
+I'm rood now
+
 ## QUESTION 1
 ```bash
 Describe the data contained in the API response. What can we discern about the weather in the specified city?
