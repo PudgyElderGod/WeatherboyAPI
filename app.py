@@ -5,7 +5,13 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
 app = Flask(__name__)
-API_KEY ='0d6a61287730d18d12a3da6f3408578d'
+
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 weather_url = "http://api.openweathermap.org/data/2.5/weather?q=Peachtree+City&appid=0d6a61287730d18d12a3da6f3408578d"
 response = requests.get(weather_url)
